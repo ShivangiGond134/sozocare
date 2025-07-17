@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Registration - SozoCare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 style="text-align:center;">Doctor Registration</h2>
+  <form onsubmit="event.preventDefault(); window.location.href='index.html';">
+    <label>Full Name</label>
+    <input type="text" required>
+
+    <label>Email Address</label>
+    <input type="email" required>
+
+    <label>Phone Number</label>
+    <input type="tel" required>
+
+    <label>Specialization</label>
+    <input type="text" required>
+
+    <label>Medical License Number</label>
+    <input type="text" required>
+
+    <label>Upload License Certificate</label>
+    <input type="file" accept="application/pdf,image/*" required>
+
+    <label>Create Password</label>
+    <input type="password" required>
+
+    <label>Confirm Password</label>
+    <input type="password" required>
+    <button type="submit">Register</button>
+
+    
+  </form>
+</body>
+</html>
