@@ -16,7 +16,7 @@ SozoCare is a modern healthcare platform that allows users to:
 
 \## 🔗 Live Demo
 
-\[Click here to try SozoCare](https://shivangigond134.github.io/sozocare/)
+\[Click here to try SozoCare](http://127.0.0.1:5500/index.html)
 
 
 
