@@ -84,28 +84,6 @@
   <button onclick="generateToken()" class="border border-white px-4 py-2 rounded-lg font-semibold hover:bg-white hover:text-[var(--accent)] transition">Token/Appointment</button>
 </nav>
 
-  <!-- Hero Section with Smooth Logo Background -->
-<section class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#066b64] py-20 shadow-lg md:py-28 xl:py-40">
-
-  <!-- ✅ Blurred, Soft Logo Background -->
- <img src="images/logo-alt.png" alt="SozoCare Logo" class="absolute inset-0 w-full h-full object-cover opacity-5 blur-sm z-0" />
-
-
-  <!-- ✅ Optional Color Overlay -->
-  <div class="absolute inset-0 bg-[rgba(6,107,100,0.6)] z-10"></div>
-
-  <!-- Hero Text Content -->
-  <div class="relative z-20 text-center text-white px-4 max-w-2xl">
-    <p class="text-lg sm:text-xl mb-3">Welcome to</p>
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">SozoCare</h1>
-    <p class="text-base sm:text-lg mb-8">India’s health platform: Talk to doctors, book appointments & stay healthy — anytime, anywhere.</p>
-
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="#services" class="bg-white text-[var(--accent)] px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Explore Services</a>
-      <a href="chatbot.html" class="border border-white px-6 py-3 rounded-lg text-white hover:bg-white hover:text-[var(--accent)] transition">Talk to Bot</a>
-    </div>
-  </div>
-</section>
   <!-- Services -->
   <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-6">
     <div onclick="location.href='isvc.html'" class="bg-white border shadow hover:shadow-lg rounded-xl overflow-hidden cursor-pointer">
@@ -137,6 +115,29 @@
       </div>
     </div>
   </section>
+  <!-- Hero Section with Smooth Logo Background -->
+<section class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#066b64] py-20 shadow-lg md:py-28 xl:py-40">
+
+  <!-- ✅ Blurred, Soft Logo Background -->
+ <img src="images/logo-alt.png" alt="SozoCare Logo" class="absolute inset-0 w-full h-full object-cover opacity-5 blur-sm z-0" />
+
+
+  <!-- ✅ Optional Color Overlay -->
+  <div class="absolute inset-0 bg-[rgba(6,107,100,0.6)] z-10"></div>
+  <!-- Hero Text Content -->
+  <div class="relative z-20 text-center text-white px-4 max-w-2xl">
+    <p class="text-lg sm:text-xl mb-3">Welcome to</p>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">SozoCare</h1>
+    <p class="text-base sm:text-lg mb-8">India’s health platform: Talk to doctors, book appointments & stay healthy — anytime, anywhere.</p>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#services" class="bg-white text-[var(--accent)] px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Explore Services</a>
+      <a href="chatbot.html" class="border border-white px-6 py-3 rounded-lg text-white hover:bg-white hover:text-[var(--accent)] transition">Talk to Bot</a>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- Welcome Section -->
   <div class="bg-white rounded-lg mx-4 my-8 p-6 shadow">
@@ -144,11 +145,80 @@
     <p class="mb-2">Your one stop solution for health services. Use the navigation above to find doctors, book appointments, or explore specialties.</p>
     <p><strong>Time to appointment:</strong> <span id="apptTime" class="text-[var(--primary)]">Select location & doctor</span></p>
   </div>
-
+  
   <!-- Footer -->
-<footer class="text-center py-4 text-sm text-gray-700 bg-white bg-opacity-80 backdrop-blur border-t mt-8">
-  About | Policy | Agreement | Copyright © 2025 SozoCare
+<footer class="bg-gradient-to-b from-[#22c3b5] to-[#066b64] text-white pt-10 pb-6 px-6 mt-12">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    
+    <!-- Column 1 -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3">Health</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Find a Doctor</li>
+        <li>Book Appointment</li>
+        <li>Health Checkup</li>
+        <li>Health Record</li>
+        <li>Health Packages</li>
+        <li>Health Tips</li>
+        <li>Health Articles</li>
+        <li>Health Videos</li>
+        <li>Health Blogs</li>
+        <li>Health Forum</li>
+        <li>Health Community</li>
+        <li>Health Events</li>
+        <li>Health Webinars</li>
+        <li>Health Podcasts</li>
+        <li>Health News</li>
+        <li>Health Alerts</li>
+        <li>Health Insurance</li>
+        <li>Health Plans</li>
+        <li>Health Discounts</li>
+        <li>Health Offers</li>
+        <li>Health Rewards</li>
+        <li>Book a Lab Test</li>
+        <li>Covid Essentials</li>
+        <li>Surgery Care</li>
+        <li>Dental</li>
+        <li>Cancer Care</li>
+        <li>Partner with SozoCare</li>
+      </ul>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3">Hospitalization</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Locate Hospital</li>
+        <li>Download eCard</li>
+        <li>Track Claim</li>
+        <li>FAQs</li>
+      </ul>
+      <h3 class="font-semibold text-lg mt-6 mb-3">Policies</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Terms of Use</li>
+        <li>Privacy Policy</li>
+        <li>Refund Policy</li>
+        <li>Security</li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3">About</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Overview</li>
+        <li>Corporate Plans</li>
+        <li>Testimonials</li>
+        <li>Contact</li>
+        <li>Blog</li>
+        <li>Careers</li>
+        <li>Security</li>
+        <li>Medical Travel</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mt-10 text-center text-xs text-white opacity-80">
+    © 2025 SozoCare | All rights reserved.
+  </div>
 </footer>
-  <script src="script.js"></script>
-</body>
-</html>
