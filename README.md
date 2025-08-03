@@ -1,4 +1,4 @@
-🔗 \*\*Live Demo:\*\* \[Click here](http://127.0.0.1:5500/index.html)
+🔗 \*\*Live Demo:\*\* \[Click here](https://aditya2002-stack.github.io/sozocare/)
 
 
 
