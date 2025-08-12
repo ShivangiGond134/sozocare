@@ -1,14 +1,15 @@
 body{
   background: linear-gradient(rgba(139, 194, 202, 0.9), #0B5D65),
-              url(/findDoctors/findDocimages/logo2-removebg-preview\ -\ Edited.png) center/cover no-repeat fixed ;
+              url(findDocimages/logo2-removebg-preview\ -\ Edited.png) center/cover no-repeat fixed ;
 }
 .heading{
     height: 40px;
     background-color:#15B5B0;
-    color: whitesmoke;
+    color: #142530;
     text-align: center !important;
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: large;
+    font-weight: 500;
     padding-top: 0.5%;
     
 }
@@ -19,29 +20,20 @@ header{
    
 }
 .sozocare{
-    color: #1A2E3B;
+    color: #ffffff;
     display: inline-block;
   transition: transform 0.3s ease;
-<<<<<<< Updated upstream
   font-weight: 700;
   font-size:large;
+ 
 
 }
 .custom-bg{
     background-color: #0B5D65;
-  opacity:0.6;
-=======
-  font-weight: 800;
-  font-size: large;
-
-}
-.custom-bg{
-    background-color: #ffffff;
-    opacity: 0.8;
->>>>>>> Stashed changes
+  opacity:0.9;
 }
 .item{
-    color: #0B5D65;
+    color: #ffffff;
     display: block;
     padding: .5rem .5rem;
     text-decoration: none;
@@ -51,7 +43,7 @@ header{
 }
 .item:hover{
     text-decoration: solid;
-    color: #1A2E3B;
+    color: #142530;
     opacity: 1;
     transform: scale(1);
 }
@@ -183,8 +175,8 @@ border-color: #FFD700;
   text-decoration: none;
  }
  .footer-item:hover{
-  color:#1A2E3B ;
-  font-weight: 400;
+  color:#142530 ;
+  font-weight: 500;
  }
 
  @media (max-width: 600px) {
