@@ -19,9 +19,10 @@ header{
    
 }
 .sozocare{
-    color: white;
+    color: #1A2E3B;
     display: inline-block;
   transition: transform 0.3s ease;
+<<<<<<< Updated upstream
   font-weight: 700;
   font-size:large;
 
@@ -29,25 +30,35 @@ header{
 .custom-bg{
     background-color: #0B5D65;
   opacity:0.6;
+=======
+  font-weight: 800;
+  font-size: large;
+
+}
+.custom-bg{
+    background-color: #ffffff;
+    opacity: 0.8;
+>>>>>>> Stashed changes
 }
 .item{
-    color: white;
+    color: #0B5D65;
     display: block;
     padding: .5rem .5rem;
     text-decoration: none;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    opacity: 0.99;
+    opacity: 0.90;
+    font-weight: 600;
 }
 .item:hover{
     text-decoration: solid;
-    color: whitesmoke;
+    color: #1A2E3B;
     opacity: 1;
     transform: scale(1);
 }
 .navbar-brand:hover{
     height: 70;
     width: 80;
-    transform: scale(1.1);
+    
     font-weight: bolder;
 }
 .btn-outline{
