@@ -1,4 +1,4 @@
-🔗 \*\*Live Demo:\*\* \[Click here](https://aditya2002-stack.github.io/sozocare/)
+🔗 \*\*Live Demo:\*\* \[Click here](https:/(https://shivangigond134.github.io/sozocare/)
 
 
 
