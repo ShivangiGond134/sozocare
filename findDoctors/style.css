@@ -22,11 +22,13 @@ header{
     color: white;
     display: inline-block;
   transition: transform 0.3s ease;
-  font-weight: normal;
+  font-weight: 700;
+  font-size:large;
 
 }
 .custom-bg{
     background-color: #0B5D65;
+  opacity:0.8;
 }
 .item{
     color: white;
