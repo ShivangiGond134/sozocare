@@ -1,6 +1,6 @@
 body{
   background: linear-gradient(rgba(139, 194, 202, 0.9), #0B5D65),
-              url(findDocimages/logo2-removebg-preview\ -\ Edited.png) center/cover no-repeat fixed ;
+              url(/findDoctors/findDocimages/logo2-removebg-preview\ -\ Edited.png) center/cover no-repeat fixed ;
 }
 .heading{
     height: 40px;
@@ -11,6 +11,7 @@ body{
     font-size: large;
     font-weight: 500;
     padding-top: 0.5%;
+    
     
 }
 header{
@@ -30,7 +31,7 @@ header{
 }
 .custom-bg{
     background-color: #0B5D65;
-  opacity:0.9;
+  opacity:0.95;
 }
 .item{
     color: #ffffff;
@@ -94,6 +95,7 @@ border: none;
   font-size: 48px;
   margin-bottom: 20px;
   font-weight: bold;
+  opacity: 1;
 }
 
 .hero-section p {
