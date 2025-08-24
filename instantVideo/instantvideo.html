@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>SozoCare • Instant Video Consultation</title>
+  <link rel="stylesheet" href="instantVideo.css" />
+</head>
+<body>
+  <!-- Background Logo Watermark -->
+  <div class="logo-bg"></div>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Instant Video Consultation</h1>
+      <p>Consult top specialists instantly from the comfort of your home.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- TOP DOCTORS -->
+    <section class="section" id="top-doctors">
+      <div class="section-head">
+        <h2>Our Top Doctors</h2>
+        <p class="muted">Handpicked specialists with great patient satisfaction.</p>
+      </div>
+
+      <div class="grid doctors">
+        <!-- Top doctors (examples) -->
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Arjun Mehta" />
+          <div class="info">
+            <h3>Dr. Arjun Mehta</h3>
+            <p>Cardiologist • 12 yrs</p>
+            <p>Today • 5:00 PM</p>
+            <p class="fee">₹700</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Neha Kapoor" />
+          <div class="info">
+            <h3>Dr. Neha Kapoor</h3>
+            <p>Dermatologist • 8 yrs</p>
+            <p>Today • 6:30 PM</p>
+            <p class="fee">₹600</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Rohit Sharma" />
+          <div class="info">
+            <h3>Dr. Rohit Sharma</h3>
+            <p>General Physician • 10 yrs</p>
+            <p>Tomorrow • 9:00 AM</p>
+            <p class="fee">₹400</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Priya Singh" />
+          <div class="info">
+            <h3>Dr. Priya Singh</h3>
+            <p>Gynecologist • 14 yrs</p>
+            <p>Today • 7:00 PM</p>
+            <p class="fee">₹800</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Amit Sinha" />
+          <div class="info">
+            <h3>Dr. Amit Sinha</h3>
+            <p>Pediatrician • 11 yrs</p>
+            <p>Today • 4:00 PM</p>
+            <p class="fee">₹500</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Sneha Rao" />
+          <div class="info">
+            <h3>Dr. Sneha Rao</h3>
+            <p>Ophthalmologist • 9 yrs</p>
+            <p>Tomorrow • 10:30 AM</p>
+            <p class="fee">₹550</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Manish Gupta" />
+          <div class="info">
+            <h3>Dr. Manish Gupta</h3>
+            <p>Orthopedic • 13 yrs</p>
+            <p>Today • 8:00 PM</p>
+            <p class="fee">₹750</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Ritu Malhotra" />
+          <div class="info">
+            <h3>Dr. Ritu Malhotra</h3>
+            <p>Dentist • 6 yrs</p>
+            <p>Today • 3:30 PM</p>
+            <p class="fee">₹350</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONSULT BY DISEASE -->
+    <section class="section" id="diseases">
+      <div class="section-head">
+        <h2>Consult by Disease</h2>
+        <p class="muted">Tap a disease to view its specialist doctors.</p>
+      </div>
+
+      <div class="grid diseases">
+        <!-- Use data-target to map to group id below -->
+        <button class="card disease" data-target="heart">
+          <img src="../images/heart.png" alt="Heart Disease" />
+          <span>Heart Problems</span>
+        </button>
+
+        <button class="card disease" data-target="skin">
+          <img src="../images/skin-problem.png" alt="Skin Problems" />
+          <span>Skin Problems</span>
+        </button>
+
+        <button class="card disease" data-target="women">
+          <img src="../images/women-health.png" alt="Women Health" />
+          <span>Women’s Health</span>
+        </button>
+
+        <button class="card disease" data-target="child">
+          <img src="../images/child-health.png" alt="Child Health" />
+          <span>Child Health</span>
+        </button>
+
+        <button class="card disease" data-target="diabetes">
+          <img src="../images/diabetes.png" alt="Diabetes" />
+          <span>Diabetes</span>
+        </button>
+
+        <button class="card disease" data-target="mental">
+          <img src="../images/mentalhealth.png" alt="Mental Health" />
+          <span>Mental Health</span>
+        </button>
+
+        <button class="card disease" data-target="ortho">
+          <img src="../images/bone.png" alt="Bone & Joint" />
+          <span>Bone & Joint</span>
+        </button>
+
+        <button class="card disease" data-target="dental">
+          <img src="../images/dental.png" alt="Dental" />
+          <span>Dental Issues</span>
+        </button>
+
+        <button class="card disease" data-target="eye">
+          <img src="../images/eyecare.png" alt="Eye Care" />
+          <span>Eye Care</span>
+        </button>
+
+        <button class="card disease" data-target="ent">
+          <img src="../images/ent.png" alt="ENT" />
+          <span>ENT</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SPECIALIST LISTS (HTML-ONLY DATA) -->
+    <section class="section" id="specialists">
+      <div class="section-head">
+        <h2>Specialist Doctors</h2>
+        <p class="muted">Showing doctors for your selected condition.</p>
+      </div>
+
+      <!-- Heart / Cardiologist -->
+      <div class="grid doctors specialist-group" id="heart">
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Arjun Mehta" />
+          <div class="info">
+            <h3>Dr. Arjun Mehta</h3>
+            <p>Cardiologist • 12 yrs</p>
+            <p>Today • 5:00 PM</p>
+            <p class="fee">₹700</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Manoj Kapoor" />
+          <div class="info">
+            <h3>Dr. Manoj Kapoor</h3>
+            <p>Cardiologist • 20 yrs</p>
+            <p>Tomorrow • 11:00 AM</p>
+            <p class="fee">₹800</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Skin / Dermatologist -->
+      <div class="grid doctors specialist-group" id="skin">
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Neha Kapoor" />
+          <div class="info">
+            <h3>Dr. Neha Kapoor</h3>
+            <p>Dermatologist • 8 yrs</p>
+            <p>Today • 6:30 PM</p>
+            <p class="fee">₹600</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Nisha Verma" />
+          <div class="info">
+            <h3>Dr. Nisha Verma</h3>
+            <p>Dermatologist • 6 yrs</p>
+            <p>Tomorrow • 12:00 PM</p>
+            <p class="fee">₹450</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Women / Gynecologist -->
+      <div class="grid doctors specialist-group" id="women">
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Priya Singh" />
+          <div class="info">
+            <h3>Dr. Priya Singh</h3>
+            <p>Gynecologist • 14 yrs</p>
+            <p>Today • 7:00 PM</p>
+            <p class="fee">₹800</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Sunita Verma" />
+          <div class="info">
+            <h3>Dr. Sunita Verma</h3>
+            <p>Gynecologist • 10 yrs</p>
+            <p>Tomorrow • 10:00 AM</p>
+            <p class="fee">₹650</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Child / Pediatrician -->
+      <div class="grid doctors specialist-group" id="child">
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Amit Sinha" />
+          <div class="info">
+            <h3>Dr. Amit Sinha</h3>
+            <p>Pediatrician • 11 yrs</p>
+            <p>Today • 4:00 PM</p>
+            <p class="fee">₹500</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Kavya Iyer" />
+          <div class="info">
+            <h3>Dr. Kavya Iyer</h3>
+            <p>Pediatrician • 9 yrs</p>
+            <p>Tomorrow • 9:30 AM</p>
+            <p class="fee">₹480</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Diabetes / Endocrinologist -->
+      <div class="grid doctors specialist-group" id="diabetes">
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Pooja Nair" />
+          <div class="info">
+            <h3>Dr. Pooja Nair</h3>
+            <p>Endocrinologist • 9 yrs</p>
+            <p>Today • 5:45 PM</p>
+            <p class="fee">₹550</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Sameer Qureshi" />
+          <div class="info">
+            <h3>Dr. Sameer Qureshi</h3>
+            <p>Endocrinologist • 16 yrs</p>
+            <p>Tomorrow • 10:15 AM</p>
+            <p class="fee">₹700</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Mental / Psychiatrist -->
+      <div class="grid doctors specialist-group" id="mental">
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Varun Das" />
+          <div class="info">
+            <h3>Dr. Varun Das</h3>
+            <p>Psychiatrist • 11 yrs</p>
+            <p>Today • 8:00 PM</p>
+            <p class="fee">₹700</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Megha Chatterjee" />
+          <div class="info">
+            <h3>Dr. Megha Chatterjee</h3>
+            <p>Psychiatrist • 7 yrs</p>
+            <p>Tomorrow • 3:00 PM</p>
+            <p class="fee">₹600</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Ortho / Orthopedic -->
+      <div class="grid doctors specialist-group" id="ortho">
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Manish Gupta" />
+          <div class="info">
+            <h3>Dr. Manish Gupta</h3>
+            <p>Orthopedic • 13 yrs</p>
+            <p>Today • 8:00 PM</p>
+            <p class="fee">₹750</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Swara Kulkarni" />
+          <div class="info">
+            <h3>Dr. Swara Kulkarni</h3>
+            <p>Orthopedic • 9 yrs</p>
+            <p>Tomorrow • 11:45 AM</p>
+            <p class="fee">₹620</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Dental / Dentist -->
+      <div class="grid doctors specialist-group" id="dental">
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Ritu Malhotra" />
+          <div class="info">
+            <h3>Dr. Ritu Malhotra</h3>
+            <p>Dentist • 6 yrs</p>
+            <p>Today • 3:30 PM</p>
+            <p class="fee">₹350</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Sahil Bansal" />
+          <div class="info">
+            <h3>Dr. Sahil Bansal</h3>
+            <p>Dentist • 10 yrs</p>
+            <p>Tomorrow • 1:15 PM</p>
+            <p class="fee">₹500</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Eye / Ophthalmologist -->
+      <div class="grid doctors specialist-group" id="eye">
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Sneha Rao" />
+          <div class="info">
+            <h3>Dr. Sneha Rao</h3>
+            <p>Ophthalmologist • 9 yrs</p>
+            <p>Tomorrow • 10:30 AM</p>
+            <p class="fee">₹550</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Vikram Shah" />
+          <div class="info">
+            <h3>Dr. Vikram Shah</h3>
+            <p>Ophthalmologist • 15 yrs</p>
+            <p>Today • 7:15 PM</p>
+            <p class="fee">₹700</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- ENT -->
+      <div class="grid doctors specialist-group" id="ent">
+        <article class="card doctor">
+          <img src="docs/doc-female.jpg" alt="Dr. Ananya Pillai" />
+          <div class="info">
+            <h3>Dr. Ananya Pillai</h3>
+            <p>ENT Specialist • 8 yrs</p>
+            <p>Today • 6:00 PM</p>
+            <p class="fee">₹480</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+        <article class="card doctor">
+          <img src="docs/doc-male.jpg" alt="Dr. Karthik Menon" />
+          <div class="info">
+            <h3>Dr. Karthik Menon</h3>
+            <p>ENT Specialist • 12 yrs</p>
+            <p>Tomorrow • 9:45 AM</p>
+            <p class="fee">₹650</p>
+            <button class="consult-btn">Consult Now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMMON HEALTH CONCERNS -->
+    <section class="section" id="concerns">
+      <div class="section-head">
+        <h2>Common Health Concerns</h2>
+      </div>
+      <div class="grid concerns">
+        <article class="card concern">
+          <img src="../images/coldandcough.png" alt="Cold & Cough" />
+          <span>Cold & Cough</span>
+        </article>
+        <article class="card concern">
+          <img src="../images/fever.png" alt="Fever" />
+          <span>Fever</span>
+        </article>
+        <article class="card concern">
+          <img src="../images/allergy.png" alt="Allergy" />
+          <span>Allergy</span>
+        </article>
+        <article class="card concern">
+          <img src="../images/headache.png" alt="Headache" />
+          <span>Headache</span>
+        </article>
+        <article class="card concern">
+          <img src="../images/stomach.png" alt="Stomach Ache" />
+          <span>Stomach Ache</span>
+        </article>
+        <article class="card concern">
+          <img src="../images/anxiety.png" alt="Anxiety" />
+          <span>Anxiety</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© SozoCare • Secure online consultations</p>
+    </div>
+  </footer>
+
+  <script src="instantVideo.js"></script>
+</body>
+</html>

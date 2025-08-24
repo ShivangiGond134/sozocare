@@ -1,0 +1,188 @@
+/* ========== Base / Theme ========== */
+:root{
+  --primary:#0a6c7e;       /* teal (logo-ish) */
+  --primary-2:#2dc7b3;     /* accent mint */
+  --ink:#08343c;           /* deep text */
+  --muted:#5c7a83;         /* secondary text */
+  --card:#ffffff;          /* card bg */
+  --bg:#f4fbfb;            /* page bg */
+  --ring:rgba(13,148,136,.35);
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+}
+
+/* watermark logo behind everything */
+.logo-bg{
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(transparent 0, transparent 40%, rgba(255,255,255,.85) 60%),
+    url("images/logo.png") center / 420px no-repeat;
+  opacity:.08;
+  z-index:-1;
+  pointer-events:none;
+  filter:saturate(0.9);
+}
+
+/* containers & sections */
+.container{ width:min(1200px, 92%); margin-inline:auto; }
+.section{ padding: 32px 0 8px; }
+.section-head{ margin-bottom:18px; }
+.section-head h2{ margin:0 0 4px; color:var(--primary); letter-spacing:.3px; }
+.section-head .muted{ margin:0; color:var(--muted); font-size:.95rem; }
+
+/* hero */
+.hero{
+  background: linear-gradient(135deg, var(--primary), #094f5c 55%);
+  color:#fff;
+  padding: 36px 0;
+  text-align:center;
+  position:relative;
+}
+.hero .container h1{
+  margin:0 0 6px;
+  font-size: clamp(1.6rem, 2.3vw + 1rem, 2.4rem);
+  letter-spacing:.2px;
+}
+.hero p{
+  margin:0;
+  opacity:.95;
+}
+
+/* grids */
+.grid{
+  display:grid;
+  gap:16px;
+}
+.grid.doctors{ grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.grid.diseases{ grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.grid.concerns{ grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+
+/* cards */
+.card{
+  background:var(--card);
+  border-radius:16px;
+  box-shadow: 0 8px 24px rgba(10,108,126,.08);
+  border:1px solid rgba(10,108,126,.08);
+  overflow:hidden;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  position:relative;
+  will-change: transform;
+}
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(10,108,126,.12);
+  border-color: var(--ring);
+}
+
+/* doctor cards */
+.card.doctor{
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+.card.doctor img{
+  width: 90px !important;
+  height: 90px !important;
+  border-radius: 50% !important;   /* makes it circular */
+  object-fit: cover !important;    /* crop and fit nicely */
+  border: 3px solid #2a9d8f;       /* colored border */
+  margin-right: 18px;
+  flex-shrink: 0;
+  
+}
+.card.doctor .info h3{
+  margin:2px 0 4px;
+  font-size:1.02rem;
+  color:var(--ink);
+}
+.card.doctor .info p{
+  margin:2px 0;
+  color:var(--muted);
+  font-size:.92rem;
+}
+.card.doctor .info .fee{
+  color:#0b7c8f;
+  font-weight:600;
+}
+
+/* Consult Button */
+.consult-btn {
+  margin-top: 8px;
+  padding: 8px 14px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.consult-btn:hover {
+  background: #21867a;
+}
+/* disease cards (buttons) */
+.diseases .disease{
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:16px 12px;
+  border:1px solid rgba(45,199,179,.18);
+  background: linear-gradient(to bottom right, #ffffff, #f7fffe);
+}
+.diseases .disease:focus-visible{
+  outline:3px solid var(--ring);
+  outline-offset:3px;
+}
+.diseases .disease img{
+  width:64px; height:64px; object-fit:contain; margin-bottom:10px;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,.08));
+}
+.diseases .disease span{
+  color:var(--ink);
+  font-weight:600; font-size:.96rem;
+}
+
+/* concern cards */
+.concerns .concern{
+  display:flex; flex-direction:column; align-items:center;
+  padding:16px 12px; text-align:center;
+}
+.concerns .concern img{
+  width:56px; height:56px; object-fit:contain; margin:8px 0 10px;
+}
+.concerns .concern span{
+  font-weight:600; color:var(--ink);
+}
+
+/* specialist groups hidden by default */
+.specialist-group{ display:none; }
+
+/* footer */
+.footer{
+  margin-top:40px;
+  padding:18px 0;
+  border-top:1px solid rgba(10,108,126,.12);
+  color:var(--muted);
+  text-align:center;
+  background: linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,.9));
+}
+
+/* small screens */
+@media (max-width:640px){
+  .card.doctor{ align-items:flex-start; }
+  .card.doctor img{ width:64px; height:64px; }
+}
